@@ -2265,7 +2265,7 @@ i + a {
   display: flex;
   align-items: center;
   gap: var(--spacing-xl);
-  padding: 0 var(--spacing-xl);
+  padding: 0 0 0 var(--spacing-xl);
   flex-shrink: 0;
 }
 .partners-marquee-track .partner-logo {
