@@ -1,0 +1,10 @@
+{
+  "name": "srins-insurance-site",
+  "version": "1.0.0",
+  "description": "SR Ins Застрахователен Брокер - corporate site",
+  "scripts": {
+    "start": "npx --yes serve . -l 3000",
+    "dev": "npx --yes serve . -l 3000"
+  },
+  "dependencies": {}
+}

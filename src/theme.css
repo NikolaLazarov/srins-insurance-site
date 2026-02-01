@@ -1,0 +1,63 @@
+/* ===== SR INS DESIGN SYSTEM ===== */
+:root {
+  /* Primary: navy */
+  --color-primary: #0f2847;
+  --color-primary-dark: #0a1a2e;
+  --color-primary-light: #1e3a5f;
+  /* Secondary: teal/emerald */
+  --color-secondary: #0d9488;
+  --color-secondary-dark: #0f766e;
+  --color-secondary-light: #14b8a6;
+  /* Accent: light blue for CTA */
+  --color-accent: #38bdf8;
+  --color-accent-dark: #0ea5e9;
+  /* Neutral */
+  --color-black: #0f0f0f;
+  --color-black-light: #1f1f1f;
+  --color-white: #ffffff;
+  --color-gray: #6b7280;
+  --color-gray-light: #f8fafc;
+  --color-gray-dark: #374151;
+
+  /* Gradients (same structure as template) */
+  --gradient-primary: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  --gradient-header: linear-gradient(90deg, var(--color-primary) 0%, var(--color-black) 30%, var(--color-primary) 100%);
+  --gradient-overlay: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+
+  /* Typography (keep Nunito Sans) */
+  --font-primary: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 6rem;
+
+  --container-max-width: 1200px;
+  --border-radius: 0.5rem;
+  --border-radius-lg: 1rem;
+  --border-radius-xl: 1.5rem;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
