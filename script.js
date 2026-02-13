@@ -6,13 +6,19 @@ var lenis;
 
 document.addEventListener('DOMContentLoaded', function () {
   initializeApp();
+});
 
+function initializeApp() {
+  initSmoothScroll();
+  initMobileDrawer();
+  initHeaderScroll();
+}
+
+function initHeaderScroll() {
   var header = document.getElementById('main-header');
-  var headerHeight = header ? header.offsetHeight : 0;
-
+  if (!header) return;
   var lastScrollY = window.scrollY;
   function onScrollMobile() {
-    if (!header) return;
     var currentY = window.scrollY;
     var isScrollingDown = currentY > lastScrollY;
     var passedHeader = currentY > 10;
@@ -23,28 +29,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     lastScrollY = currentY;
   }
-
   function handleScroll() {
     if (window.innerWidth <= 925) {
       onScrollMobile();
     } else {
-      if (header) header.classList.remove('hide');
+      header.classList.remove('hide');
     }
   }
-
   window.addEventListener('scroll', handleScroll, { passive: true });
   window.addEventListener('resize', function () {
-    if (window.innerWidth <= 925) {
-      if (header) header.classList.remove('hide');
-    }
+    header.classList.remove('hide');
     handleScroll();
   });
   handleScroll();
-});
-
-function initializeApp() {
-  initSmoothScroll();
-  initMobileDrawer();
 }
 
 function initSmoothScroll() {

@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="src/ins/sr-ins-icon.ico">
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
@@ -28,62 +29,56 @@
                     <img class="burger-icon" id="burger-icon" src="src/menu-burger.svg" alt="Меню"/>
                     <div class="logo-container">
                         <div class="nav-logo mobile-logo">
-                            <a href="index.html" aria-label="Начало">SR Ins</a>
+                            <a href="index.html" aria-label="Начало" class="logo-text">SR Ins</a>
                         </div>
                     </div>
                 </div>
                 <ul class="nav-menu" id="nav-menu">
-                    <li class="nav-item"><a href="#home" class="nav-link">Начало</a></li>
-                    <li class="nav-item"><a href="#services" class="nav-link">Услуги</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">За нас</a></li>
+                    <li class="nav-item"><a href="index.html#home" class="nav-link">Начало</a></li>
+                    <li class="nav-item"><a href="index.html#services" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">За нас</a></li>
                     <li class="nav-logo">
-                        <a href="#home" aria-label="Начало" class="logo-text">SR Ins</a>
+                        <a href="index.html" aria-label="Начало" class="logo-text">SR Ins</a>
                     </li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Контакти</a></li>
-                    <li class="nav-item"><a href="complaints-rules.html" id="claims" class="btn-gradient">Правила за жалби</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Контакти</a></li>
+                    <li class="nav-item"><a href="complaints/index.html" id="claims" class="btn-gradient">Правила за жалби</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <div id="drawer-close" class="close-container">
+    <div id="drawer-close" class="close-container animate__animated animate__fadeInLeft animate__fast">
         <div id="inside-container" class="inside-container">
-            <img class="x-close" src="src/x.svg" alt="Затвори"/>
+            <img class="x-close" src="src/x.svg" alt="Затвори" id="x-close-btn"/>
         </div>
     </div>
-    <div id="mobile-drawer" class="mobile-drawer animate__animated" aria-hidden="true">
+    <div id="mobile-drawer" class="mobile-drawer animate__animated animate__fadeInLeft animate__fast" aria-hidden="true">
         <ul class="mobile-menu first-mobile-menu">
-            <a class="mobile-link animate__animated" href="#home">Начало</a>
-            <a class="mobile-link animate__animated" href="#services">Услуги</a>
-            <a class="mobile-link animate__animated" href="#about">За нас</a>
-            <a class="mobile-link animate__animated" href="#contact">Контакти</a>
-            <a class="mobile-link animate__animated mobile-link-teal" href="complaints-rules.html">Правила за жалби</a>
-            <a class="mobile-link animate__animated" href="#partners">Партньори</a>
-            <a class="mobile-link animate__animated" href="#contact"><strong>Запитване</strong></a>
+            <a class="mobile-link animate__animated animate__fadeInLeft" href="index.html#home"><span>Начало</span><div class="border-bottom-anchor"></div></a>
+            <a class="mobile-link animate__animated animate__fadeInLeft" href="index.html#services"><span>Услуги</span><div class="border-bottom-anchor"></div></a>
+            <a class="mobile-link animate__animated animate__fadeInLeft" href="index.html#about"><span>За нас</span><div class="border-bottom-anchor"></div></a>
+            <a class="mobile-link animate__animated animate__fadeInLeft" href="index.html#contact"><span>Контакти</span><div class="border-bottom-anchor"></div></a>
+            <a class="mobile-link animate__animated animate__fadeInLeft mobile-link-teal" href="complaints/index.html"><span>Правила за жалби</span><div class="border-bottom-anchor"></div></a>
+            <a class="mobile-link animate__animated animate__fadeInLeft" href="index.html#partners"><span>Партньори</span><div class="border-bottom-anchor"></div></a>
+            <a class="mobile-link animate__animated animate__fadeInLeft" href="index.html#contact"><strong>Запитване</strong><div class="border-bottom-anchor"></div></a>
         </ul>
     </div>
 
-    <section class="hero hero-light" id="home">
-        <div class="hero-video-container" aria-hidden="true">
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="hero-title-line">Ес Ер Инс</span>
-                    <span class="hero-title-line hero-title-accent">Застрахователен Брокер</span>
-                    <span class="hero-title-line">Всички видове застраховки</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Професионално застрахователно посредничество. Анализ на нуждите, точна информация и пълно съдействие при застрахователно събитие.
-                </p>
+    <section class="hero hero-modern hero-light" id="home">
+        <div class="hero-split container">
+            <div class="hero-left">
+                <div class="hero-logo-wrap">
+                    <img src="src/ins/sr-ins-logo.png" alt="SR Ins" class="hero-logo-img" width="200" height="100">
+                </div>
+                <h3 class="hero-tagline">Застрахователен брокер</h3>
+                <p class="hero-desc">Професионално застрахователно посредничество. Анализ на нуждите, точна информация и пълно съдействие при застрахователно събитие.</p>
             </div>
-            <div class="hero-cta">
-                <a href="#services" class="btn btn-hero-primary">
+            <div class="hero-right hero-right-buttons">
+                <a href="#services" class="btn btn-hero-secondary">
                     <span>Услуги</span>
-                    <i class="fas fa-arrow-down"></i>
                 </a>
-                <a href="complaints-rules.html" class="btn btn-hero-secondary">Правила за жалби</a>
+                <a href="complaints/index.html" class="btn btn-hero-secondary">Правила за жалби</a>
+                <a href="#contact" class="btn btn-hero-secondary">Контакти с нас</a>
             </div>
         </div>
     </section>
@@ -131,7 +126,7 @@
     <section class="complaints-cta-strip complaints-cta-strip-light">
         <div class="container">
             <p>Подаване и разглеждане на жалби – прозрачни правила и срок до 1 месец за отговор.</p>
-            <a href="complaints-rules.html" class="btn">Правила за жалби</a>
+            <a href="complaints/index.html" class="btn">Правила за жалби</a>
         </div>
     </section>
 
@@ -274,7 +269,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer no-print">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -284,11 +279,11 @@
                 <div class="footer-section">
                     <h4>Навигация</h4>
                     <ul>
-                        <li><a href="#home">Начало</a></li>
-                        <li><a href="#services">Услуги</a></li>
-                        <li><a href="#about">За нас</a></li>
-                        <li><a href="#contact">Контакти</a></li>
-                        <li><a href="complaints-rules.html" class="complaints-link">Правила за жалби</a></li>
+                        <li><a href="index.html#home">Начало</a></li>
+                        <li><a href="index.html#services">Услуги</a></li>
+                        <li><a href="index.html#about">За нас</a></li>
+                        <li><a href="index.html#contact">Контакти</a></li>
+                        <li><a href="complaints/index.html" class="complaints-link">Правила за жалби</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
