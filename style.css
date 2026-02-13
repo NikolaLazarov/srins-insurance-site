@@ -1514,7 +1514,7 @@ a:hover {
 }
 
 .detailing-package:hover {
-  transform: translateY(-5px);
+  transform: translate3d(-5px, -5px, 0);
   box-shadow: var(--shadow-xl);
 }
 
@@ -1858,7 +1858,7 @@ a:hover {
 }
 
 .btn-submit:hover {
-  transform: translateY(-2px);
+  transform: translate3d(-5px, -5px, 0);
   box-shadow: var(--shadow-lg);
 }
 
@@ -1974,7 +1974,7 @@ a.nl {
 }
 
 .social-link:hover {
-  transform: translateY(-3px);
+  transform: translate3d(-5px, -5px, 0);
 }
 
 .footer-bottom {
