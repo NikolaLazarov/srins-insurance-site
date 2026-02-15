@@ -320,7 +320,7 @@ a:hover {
 
 .section-white {
   background-color: var(--color-white);
-  background-image: url("/src/background.png");
+  background-image: url("src/background.png");
   color: var(--color-gray-dark);
 }
 
@@ -705,7 +705,7 @@ a:hover {
 /* Hero light (white theme for homepage) */
 .hero.hero-light {
   background: var(--color-white);
-  background-image: url("/src/background.png");
+  background-image: url("src/background.png");
   color: var(--color-black);
   min-height: 70vh;
 }
