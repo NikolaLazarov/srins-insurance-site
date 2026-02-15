@@ -320,7 +320,7 @@ a:hover {
 
 .section-white {
   background-color: var(--color-white);
-  background-image: url("/src/ins/absurdity.png");
+  background-image: url("/src/background.png");
   color: var(--color-gray-dark);
 }
 
@@ -705,7 +705,7 @@ a:hover {
 /* Hero light (white theme for homepage) */
 .hero.hero-light {
   background: var(--color-white);
-  background-image: url("src/ins/absurdity.png");
+  background-image: url("/src/background.png");
   color: var(--color-black);
   min-height: 70vh;
 }
@@ -2801,8 +2801,11 @@ i+a {
   }
 }
 
-/* Мобилен (361px–480px) */
 @media (max-width: 480px) {
+  .hero-tagline{
+    font-size: 31px;
+  }
+
   .partners-marquee-inner {
     gap: var(--spacing-sm);
     padding: 0 0 0 var(--spacing-sm);
