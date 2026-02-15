@@ -744,7 +744,6 @@ a:hover {
   color: var(--color-white);
   border-color: var(--color-primary);
   transform: translate3d(-5px, -5px, 0);
-  transform: translate3d(-5px, -5px, 0);
 }
 
 .hero.hero-light .hero-title-line {
@@ -781,7 +780,6 @@ a:hover {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0;
 }
 
 
@@ -810,7 +808,7 @@ a:hover {
 }
 
 .hero-desc {
-  font-size: 20px;
+  font-size: clamp(16px, 2.5vw, 20px);
   line-height: 1.65;
   color: var(--color-gray-dark);
   margin-bottom: var(--spacing-xl);
@@ -884,7 +882,7 @@ a:hover {
 @media (max-width: 900px) {
   .hero-split {
     grid-template-columns: 1fr;
-    gap: var(--spacing-2xl);
+    gap: var(--spacing-lg);
   }
 
   .hero-left {
@@ -897,6 +895,7 @@ a:hover {
 
   .hero-right-buttons {
     align-items: stretch;
+    gap: var(--spacing-sm);
   }
 
   .hero-right-buttons .btn {
@@ -983,14 +982,15 @@ a:hover {
 }
 
 .hero-tagline {
-  font-size: 48px;
+  font-size: clamp(26px, 31px, 48px);
   font-weight: 600;
   color: var(--color-black);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   padding-bottom: 4px;
   border-bottom: 4px solid var(--color-primary);
   margin-bottom: var(--spacing-md);
+  display: block;
 }
 
 .hero-cta-modern {
@@ -2715,8 +2715,14 @@ i+a {
 }
 
 @media (max-width: 768px) {
-  .hero-tagline{
-    font-size: 34px;
+  .hero-tagline {
+    letter-spacing: 0.03em;
+    border-bottom-width: 3px;
+  }
+
+  .hero-right-buttons .btn-hero-secondary {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-base);
   }
 
   .partners-marquee-inner {
@@ -2802,8 +2808,13 @@ i+a {
 }
 
 @media (max-width: 480px) {
-  .hero-tagline{
-    font-size: 31px;
+  .hero-tagline {
+    letter-spacing: 0.02em;
+    border-bottom-width: 2.5px;
+  }
+
+  .hero-desc {
+    font-size: 16px;
   }
 
   .partners-marquee-inner {
